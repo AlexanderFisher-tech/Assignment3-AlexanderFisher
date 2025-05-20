@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <
+  <body class="bg-light text-dark">
+    <div class="container mt-4">
+      <h1 class="text-center mb-3">Pokémon Memory Game</h1>
+
+      <div class="d-flex justify-content-between mb-3">
+        <div>
+          <select id="difficulty" class="form-select">
+            <option value="easy">Novice (3 pairs)</option>
+            <option value="medium" selected>Intermediate (6 pairs)</option>
+            <option value="hard">Master (9 pairs)</option>
+          </select>
+        </div>
+        <div>
+          <button id="startBtn" class="btn btn-success">Start Game</button>
+          <button id="resetBtn" class="btn btn-danger">Reset Game</button>
+          <button id="themeToggle" class="btn btn-secondary">
+            Switch Theme
+          </button>
+        </div>
+      </div>
+
+      <div id="status" class="mb-3 text-center fw-bold"></div>
+
+      <div id="game_grid"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
